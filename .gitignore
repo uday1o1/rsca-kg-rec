@@ -26,3 +26,4 @@ checkpoints/
 # Intellij
 .idea
 /rsca-kg-rec.iml
+.venv/
