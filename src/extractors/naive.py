@@ -17,7 +17,9 @@ Rules:
 - Both head and tail must be plain strings, never arrays or lists.
 - relation must be exactly requires, related_to, or classified_as — nothing else.
 - Extract one triple per skill. If a job requires Python and Java, make two separate triples.
-- Only extract skills explicitly stated in the text.
+- Only extract skills explicitly stated in the text. Do not infer or hallucinate.
+- tail must be a concrete skill, tool, certification, or competency — not a phrase or sentence.
+- Do not create triples where head and tail are paraphrases of each other.
 - Return [] if no valid triples found.
 
 Example of valid output:
@@ -162,8 +164,8 @@ def debug_single(input_csv: str, index: int = 1):
 if __name__ == "__main__":
     run_naive_extraction(
         input_csv="data/raw/sample_postings.csv",
-        output_csv="data/processed/naive/triples_dev.csv",
-        limit=20
+        output_csv="data/processed/naive/triples_full.csv",
+        limit=None
     )
     # debug_single("data/raw/sample_postings.csv", index=1)
     # debug_single("data/raw/sample_postings.csv", index=4)
