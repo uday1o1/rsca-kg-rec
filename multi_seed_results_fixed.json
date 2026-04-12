@@ -1,0 +1,26 @@
+{
+  "naive": {
+    "recall@10_mean": 0.2324,
+    "recall@10_std": 0.0046,
+    "ndcg@10_mean": 0.1606,
+    "ndcg@10_std": 0.0032,
+    "mrr_mean": 0.1908,
+    "mrr_std": 0.0024
+  },
+  "taxonomy": {
+    "recall@10_mean": 0.1219,
+    "recall@10_std": 0.0083,
+    "ndcg@10_mean": 0.1206,
+    "ndcg@10_std": 0.0074,
+    "mrr_mean": 0.1563,
+    "mrr_std": 0.0083
+  },
+  "graph_aware": {
+    "recall@10_mean": 0.7721,
+    "recall@10_std": 0.0259,
+    "ndcg@10_mean": 0.5558,
+    "ndcg@10_std": 0.1527,
+    "mrr_mean": 0.4916,
+    "mrr_std": 0.1876
+  }
+}

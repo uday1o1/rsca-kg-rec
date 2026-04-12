@@ -1,0 +1,48 @@
+{
+  "graphsage": {
+    "naive": {
+      "recall@5": 0.185,
+      "recall@10": 0.185,
+      "ndcg@5": 0.1469,
+      "ndcg@10": 0.1469,
+      "mrr": 0.1468
+    },
+    "taxonomy": {
+      "recall@5": 0.17,
+      "recall@10": 0.17,
+      "ndcg@5": 0.1407,
+      "ndcg@10": 0.1407,
+      "mrr": 0.145
+    },
+    "graph_aware": {
+      "recall@5": 0.725,
+      "recall@10": 0.73,
+      "ndcg@5": 0.5089,
+      "ndcg@10": 0.5105,
+      "mrr": 0.4431
+    }
+  },
+  "rgcn": {
+    "naive": {
+      "recall@5": 0.05,
+      "recall@10": 0.055,
+      "ndcg@5": 0.0325,
+      "ndcg@10": 0.0339,
+      "mrr": 0.0733
+    },
+    "taxonomy": {
+      "recall@5": 0.06,
+      "recall@10": 0.065,
+      "ndcg@5": 0.0532,
+      "ndcg@10": 0.0546,
+      "mrr": 0.1002
+    },
+    "graph_aware": {
+      "recall@5": 0.095,
+      "recall@10": 0.345,
+      "ndcg@5": 0.0638,
+      "ndcg@10": 0.142,
+      "mrr": 0.1188
+    }
+  }
+}
