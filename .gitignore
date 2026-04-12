@@ -27,3 +27,4 @@ checkpoints/
 .idea
 /rsca-kg-rec.iml
 .venv/
+__MACOSX/
